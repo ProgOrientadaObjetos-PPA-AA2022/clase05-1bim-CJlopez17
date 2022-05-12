@@ -1,18 +1,9 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-package paquetedos;
-
-/**
- *
- * @author reroes
- */
+package paquete03;
 public class Autor {
 
     private String nombre;
     private String apellido;
+    private String pasaporte;
 
     public Autor(String a, String b) {
         nombre = a;
@@ -22,7 +13,9 @@ public class Autor {
     public void establecerNombre(String n) {
         nombre = n;
     }
-
+    public void establecerPasaporte(String n) {
+        pasaporte = n;
+    }
     public void establecerApellido(String n) {
         apellido = n;
     }
@@ -34,5 +27,7 @@ public class Autor {
     public String obtenerApellido() {
         return apellido;
     }
-
+    public String obtenerPasaporte() {
+        return pasaporte;
+    }    
 }
